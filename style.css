@@ -1,0 +1,301 @@
+.input_text_1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url('background_grey.jpg');
+    background-size: 240px;
+    min-width: auto;
+    margin: 0px;
+}
+
+
+/* Barra de Pesquisa, Opições */
+
+.shadow_geral_animation {
+    transition: 0.5s;
+}
+
+.shadow_geral:hover {
+    box-shadow: 0 0px 16px 0 rgba(0, 0, 0, 0.384), 0 6px 12px 0 rgba(0, 0, 0, 0.384);
+}
+
+.div_background {
+    background-image: linear-gradient(#474a51, #696969);
+    height: 3rem;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    transition: 0.45s;
+    padding-inline: 3rem;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.div_background:hover {
+    box-shadow: 0 0px 16px 0 rgba(0, 0, 0, 0.384), 0 6px 12px 0 rgba(0, 0, 0, 0.384);
+}
+
+.button_size {
+    width: 23px;
+    height: 23px;
+    border-radius: 1rem;
+    border-style: hidden;
+    transition: 0.75s;
+    margin: 1rem;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.button_size:hover {
+    transform: rotate(180deg);
+}
+
+.button_size_test {
+    width: 23px;
+    height: 23px;
+    border-style: hidden;
+    transition: 0.75s;
+    margin: 0;
+    cursor: pointer;
+}
+
+.button_size_test:hover+.test {
+    transform: rotate(180deg);
+}
+
+
+/* Pagina principal - timeline*/
+
+.div_timeline {
+    width: 400px;
+    height: 100%;
+    min-width: 53%;
+    background-color: #696969;
+    margin-inline: 1rem;
+    margin-block-start: 1rem;
+    box-shadow: 0 0px 16px 0 rgba(0, 0, 0, 0.384), 0 6px 12px 0 rgba(0, 0, 0, 0.384);
+    position: static;
+    border-radius: 3px;
+}
+
+.div_post {
+    margin: 1rem;
+    text-align: left;
+    padding-block: 1rem;
+}
+
+
+/* Caixa perfil esquerda */
+
+.div_profile {
+    height: 32rem;
+    width: 13%;
+    background-color: aliceblue;
+    margin: 5px;
+    padding: 3px;
+    transform: translate(8rem, -22px);
+    border-radius: 4px;
+}
+
+.img_profile {
+    height: 41%;
+    width: 91%;
+    margin: 10px;
+    border-radius: 3%;
+}
+
+.img_profile:hover {
+    cursor: pointer;
+}
+
+
+/* Caixa de opições, Config., Sair ETC. */
+
+.div_options {
+    width: 10rem;
+    height: 0%;
+    background-color: white;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    transition: 0.35s;
+    float: right;
+    opacity: 0%;
+    transform: translate(24px, 3rem);
+}
+
+.div_options_hover {
+    height: 282%;
+    transition: 0.35s;
+    opacity: 100%;
+}
+
+.div_options:hover {
+    height: 282%;
+    transition: 0.35s;
+    opacity: 100%;
+}
+
+ul.div_options_list {
+    list-style-type: none;
+    text-align: center;
+    padding-inline: 0px;
+    margin-block: 0px;
+    opacity: 0%;
+    transition: 0.15s;
+}
+
+ul.div_options_list_hover {
+    opacity: 100%;
+}
+
+ul.div_options_list:hover {
+    opacity: 100%;
+}
+
+li.div_options_list_1 {
+    padding-block: 7px;
+    margin-inline: 2px;
+    transition: 0.35s;
+    margin-top: 1px;
+}
+
+li.div_options_list_1:hover:not(.active) {
+    background-color: rgb(28, 69, 255);
+    color: azure;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.active {
+    background-color: rgb(28, 69, 255);
+}
+
+
+/* Inputs e geral */
+
+.input_size {
+    padding-bottom: 1rem;
+}
+
+.img_source {
+    margin: 8px;
+    margin-top: 16px;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 12px;
+    border-style: solid;
+    border-color: #cccccc;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+.img_source_2 {
+    margin: 8px;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 12px;
+    border-style: solid;
+    border-color: #cccccc;
+    transition: 0.7s;
+    cursor: pointer;
+    vertical-align: 1rem;
+}
+
+.input_size_2 {
+    margin-block: 7px;
+    margin-left: 1rem;
+    padding-block: 7px;
+    width: 35%;
+    height: 1rem;
+    border-radius: 8px;
+    padding-inline: 1rem;
+    vertical-align: 3rem;
+    border: hidden;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.input_size_button {
+    height: 62%;
+    padding-inline: 16px;
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 7px;
+    vertical-align: 3rem;
+    border-style: hidden;
+    background-color: #838383;
+    transition: 0.45s;
+}
+
+.input_size_button:hover {
+    background-color: #cccccc;
+    cursor: pointer;
+}
+
+.input_opions {
+    margin-block: 7px;
+    height: 2rem;
+    padding-inline: 16px;
+}
+
+.input_size_3 {
+    border-top-left-radius: 15px;
+}
+
+.size_box {
+    margin: 2px 2px 0 2px;
+    padding: 10px 12px;
+}
+
+.size_box_div {
+    margin: 1px 1px 0 1px;
+    padding: 6px 8px;
+}
+
+.size_1 {
+    font-size: 8pt;
+}
+
+.border_1 {
+    border-radius: 7px;
+}
+
+.border_2 {
+    border-radius: 40px;
+}
+
+.border_input {
+    border: black;
+    border-block: 10px;
+    transition: 0.5s;
+}
+
+.border_input_1 {
+    border: black;
+    border-block: 10px;
+    transition: 0.5s;
+}
+
+.border_input_1:hover {
+    background-color: #dfe9f5;
+}
+
+.div_default {
+    border-radius: 1px;
+}
+
+.div_login_space {
+    padding-block: 6rem;
+    padding-inline: 1rem;
+}
+
+#post_content {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 75%;
+    height: 4rem;
+    border-radius: 12px;
+    border-style: none;
+    resize: none;
+    padding: 1rem;
+    padding-top: 1rem;
+}
